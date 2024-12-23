@@ -2,12 +2,12 @@
 #define SIZE 4
 int main(void)
 {
-	short dates[SIZE];
-	short * pti;
+	short dates[SIZE];//short 类型数组
+	short * pti;//short 类型pti指针
 	short index;
 	double bills[SIZE];
 	double * ptf;
-	pti = dates;
+	pti = dates;//数组名是数组首元素的地址，所以可以赋值
 	ptf = bills;
 	
 	printf("%23s %15s\n","short","double");
