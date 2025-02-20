@@ -13,7 +13,7 @@ const char * colors [] ={"red","orange","yellow","green","blue","violet"};
 int main(void)
 {
 	char choice[LEN];
-	emun spectrum color;
+	enum spectrum color;
 	bool color_is_found = false;
 	
 	puts("enter a color (empty line to quit):");
@@ -51,7 +51,7 @@ int main(void)
 		puts("goodbye!");
 		return 0;
 	 } 
-}
+
 
 
 
