@@ -1,4 +1,4 @@
-#ifdenf LIST_H_
+#ifndef LIST_H_
 #define LIST_H_
 #include<stdbool.h>
 
