@@ -36,8 +36,48 @@ int main(void)
 	return 0;
 }
 
-char
+char menu(void)
+{
+	
+	int ch;
+	puts("Nerfville Pet Club Membership Program");
+	puts("enter the letter corresponding to your choice:");
+	puts("a) add a pet       1)show list of pets");
+	puts("n) number of pets  f)find pets");
+	puts("d) delete a pet    q)quit");
+	while((ch = getchar())!= EOF)
+	{
+		while(getchar()!= '\n')
+			continue;
+		ch = tolower(ch);
+		if(strchar("alrfndq",ch)== NULL)
+			puts("please enter an l,f,n,d or q:");
+		else
+			break;
+	}
+	if(ch == EOF)
+		ch = 'q';
+	return ch;
+ } 
+void addpet(Tree * pt)
+{
+	Item temp;
+	if(TreeIsFull(pt))
+		puts("NO room in the club!");
+	else
+	{
+		puts("please enter name of pets:");
+		s_gets(temp.petname,SLEN);
+		puts("please enter pet kind:");
+		s_gets(temp.petkind,SLEN);
+		uppercase(temp.petname);
+		uppercase(temp.petkind);
+		AddItem(&temp,pt);
+		
+	}
+}
 
+void showpets(const )
 
 char * s_gets(char *st,int n)
 {
