@@ -77,7 +77,70 @@ void addpet(Tree * pt)
 	}
 }
 
-void showpets(const )
+void showpets(const Tree * pt)
+{
+	if(TreeIsEmpty(pt))
+		puts("No entries!");
+	else
+		Traverse(pt,printitem);
+}
+
+void printitem(Item item)
+{
+	printf("pet:%-19s kind:: %-19s\n",item.petname,item.petkind);
+}
+
+void findpet(const Tree *pt)
+{
+	Item temp;
+	if(TreeIsEmpty(pt))
+	{
+		puts("no entries!");
+		return ;
+	}
+	puts("please enter name of pet you wish to find:");
+	s_gets(temp.petname,SLEN);
+	puts("please enter pet kind:");
+	s_gets(temp.petkind,SLEN);
+	uppercase(temp.petname);
+	uppercase(temp.petkind);
+	printf("%s  the %s",temp.petname,temp.petkind);
+	if(Intree(&temp,pt))
+		printf("is  a menber.\n");
+	else
+		printf("is not a menber.\n");
+}
+
+void droppet(Tree * pt)
+{
+	Item temp;
+	if(TreeIsEmpty(pt))
+	{
+		puts("no entries");
+		return;
+	}
+	
+	puts("please enter name of pet you wish to delete:");
+	s_gets(temp.petname,SLEN);
+	puts("please enter pet knid :");
+	s_gets(temp.petkind,SLEN);
+	uppercase(temp.petname);
+	uppercase(temp.petkind);
+	printf("%s the %s ",temp.petname,temp.petkind);
+	if(DeleteItem(&temp,pt))
+		printf("is dropped from the club .\n");
+	else
+		printf("is not a menber.\n");
+}
+
+void uppercase(char * str)
+{
+	while(*str)
+	{
+		*str = toupper(*str);
+		str++;
+	}
+}
 
 char * s_gets(char *st,int n)
 {
