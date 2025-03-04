@@ -1,14 +1,14 @@
 #include<stdio.h>
-void butler(void);//º¯ÊýÔ­ÐÍ 
+void butler(void);//ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ å‡½æ•°åŽŸåž‹
 int main(void)
 {
 	printf("I will summon the butler function.\n");
-	butler();
+	butler();//è°ƒç”¨å‡½æ•°
 	printf("Yes, bring me some tea and writeable DVDs.\n");
 	return 0;
  } 
  
- void butler(void)//º¯Êý¶¨Òå 
+ void butler(void)//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ å‡½æ•°å®šä¹‰
  {
  	printf("You rang, sir?\n");
  }

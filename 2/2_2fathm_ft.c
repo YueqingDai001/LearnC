@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main (void)
 {
-    int feet,fathoms;//¶¨Òå±äÁ¿Ó¢³ßºÍÓ¢´ç
+    int feet,fathoms;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¢ï¿½ßºï¿½Ó¢ï¿½ï¿½å®šä¹‰å¤šä¸ªå˜é‡
     fathoms = 2;
     feet  = 6* fathoms;
-    printf("ÕâÀïÊÇ%dÓ¢³ßÔÚ%dÓ¢Ñ°\n",feet,fathoms);
-    printf("ÎÒËµÕâ¸öÊÇ%dÓ¢³ß£¡",6*fathoms);
+    printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½%dÓ¢ï¿½ï¿½ï¿½ï¿½%dÓ¢Ñ°\n",feet,fathoms);
+    printf("ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½%dÓ¢ï¿½ß£ï¿½",6*fathoms);
     return 0;
 }

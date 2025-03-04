@@ -1,4 +1,5 @@
 #include<stdio.h>
+//语法错误已经修正
 int main(void)
 {
 	int n;

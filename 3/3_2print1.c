@@ -5,7 +5,7 @@ int main(void)
 	int two = 2;
 	
 	printf("Doing it right: ");
-	printf("%d minus %d is %d\n",ten,2,ten-two);
+	printf("%d minus %d is %d\n",ten,2,ten-two);//多个输出
 	printf("Do it wrong: ");
 	printf("%d minus %d is %d\n",ten);
 	
