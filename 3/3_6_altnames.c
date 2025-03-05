@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<inttypes.h> 
+#include<inttypes.h> //限制类型
 int main(void)
 {
 	int32_t me32;

@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(void)
 {
-	char ch;
+	char ch;//char 类型
 	
 	printf("Please enter a character.\n");
 	scanf("%c",&ch);

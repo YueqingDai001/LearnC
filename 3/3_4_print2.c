@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main(void)
 {
-	unsigned int un = 3000000000;
-	short end = 200;
-	long big = 65537;
+	unsigned int un = 3000000000;//无符号整型
+	short end = 200;//短
+	long big = 65537;//长64位
 	long long verybig = 12345678908642;
 	
 	printf("un = %u and not %d\n",un,un);
