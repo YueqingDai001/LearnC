@@ -5,7 +5,7 @@ int main(void)
 {
 	float weight,volume;
 	int size,letters;
-	char name[40];
+	char name[40];//字符数组
 
 	printf("Hi!	what's your first name?\n");
 	scanf("%s",name);

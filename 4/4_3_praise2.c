@@ -8,7 +8,7 @@ int main(void)
     scanf("%s",name);
     printf("Hello, %s. %s\n",name,PARISE);
     printf("Your name of %zd letters occupies %zd menory cells.\n",
-               strlen(name),sizeof name);
+               strlen(name),sizeof name);//strlen 计算字符串长度，不包括\0
     printf("The phrase of praise has %zd letters ",
             strlen(PARISE));
     printf("and occupies %zd memory cells.\n",sizeof PARISE);

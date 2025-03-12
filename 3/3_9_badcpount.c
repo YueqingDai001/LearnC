@@ -7,7 +7,7 @@ int main(void)
 	float g = 8.0f;
 	
 	printf("%d\n",n,m);
-	printf("%d %d %d\n",n);
+	printf("%d %d %d\n",n);//输入输出不匹配
 	printf("%d %d\n",f,g);
 	
 	return 0;
