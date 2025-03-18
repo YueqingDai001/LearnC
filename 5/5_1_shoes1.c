@@ -2,7 +2,7 @@
 #define ADJUST 7.31
 int main(void)
 {
-	const double SCALE = 0.333;
+	const double SCALE = 0.333;//常值const 
 	double shoe,foot;
 	
 	shoe = 9.0;
