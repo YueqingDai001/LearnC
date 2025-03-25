@@ -11,3 +11,4 @@ int main(void)
 	}
 	return 0;
 }
+//阅读记录，++n   与n++区别
